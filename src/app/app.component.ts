@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  items = [
+    {
+      name: 'item1'
+    },
+    {
+      name: 'item2'
+    },
+    {
+      name: 'item3'
+    },
+    {
+      name: 'item4'
+    },
+    {
+      name: 'item5'
+    }
+  ];
+
+  onClick(itemEl) {
+    itemEl.scrollIntoView();
+  }
 }
